@@ -7,7 +7,13 @@ $(document).ready(function() {
     for (var i = 1; i <= numberInput; i++) {
       debugger;
       var result = i
+
+      if (result % 3 === 0) {
+        result = "ping";
+      }
+
       $("#result-list").append("<li>" + result + "</li>");
+
     }
   });
 });
