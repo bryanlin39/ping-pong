@@ -2,7 +2,7 @@
 
 #### Interactive webpage to practice JavaScript branching and looping, 03/31/2017
 
-#### By Bryan Lin
+### By Bryan Lin
 
 ## Description
 
@@ -21,6 +21,9 @@ Number Ping-Pong is an interactive webpage that uses JavaScript and jQuery to ta
 * Replace numbers divisible by 15 with the word "ping-pong"
   * _Example Input:_ 16
   * _Example Output:_ [1,2,ping,4,pong,6,...,14,ping-pong,16]
+* Show new results when user enters a new number
+  * _Example Input:_ 3, 4
+  * _Example Output:_ [1,2,ping], [1,2,ping,4]
 
 ## Setup/Installation Requirements
 
