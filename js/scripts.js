@@ -3,6 +3,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     var numberInput = parseInt($("#number-input").val());
-    
+
   });
 });
