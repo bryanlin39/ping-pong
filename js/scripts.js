@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     $("#result-list").empty();
     var numberInput = parseInt($("#number-input").val());
+    var resultList = [];
 
     for (var i = 1; i <= numberInput; i++) {
       var result = i
@@ -17,6 +18,19 @@ $(document).ready(function() {
       }
 
       $("#result-list").append("<li>" + result + "</li>");
+      resultList.push(result);
     }
+
+    // Reverse Button Functionality
+    $("#reverse-button").show()
+    $("#reverse-button").click(function() {
+      $("#result-list").empty();
+      resultList.reverse();
+
+      for (var i = 0; i < resultList.length; i++) {
+        $("#result-list").append("<li>" + resultList[i] + "</li>");
+      }
+
+    });
   });
 });
