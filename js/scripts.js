@@ -8,7 +8,9 @@ $(document).ready(function() {
       debugger;
       var result = i
 
-      if (result % 3 === 0) {
+      if (result % 15 === 0) {
+        result = "ping-pong";
+      } else if (result % 3 === 0) {
         result = "ping";
       } else if (result % 5 === 0) {
         result = "pong";
