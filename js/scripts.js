@@ -5,14 +5,13 @@ $(document).ready(function() {
     $("#left-img").fadeIn();
     $("#right-img").fadeOut();
     $("#result-field").slideDown();
-
     $("#result-list").empty();
+
     var numberInput = parseInt($("#number-input").val());
     var resultList = [];
 
     for (var i = 1; i <= numberInput; i++) {
       var result = i
-
       if (result % 15 === 0) {
         result = "ping-pong";
       } else if (result % 3 === 0) {
@@ -20,25 +19,20 @@ $(document).ready(function() {
       } else if (result % 5 === 0) {
         result = "pong";
       }
-
       $("#result-list").append("<li>" + result + "</li>");
       resultList.push(result);
     }
 
-    // Reverse Button Functionality
     $("#reverse-button").show()
     $("#reverse-button").click(function() {
-
       $("#right-img").fadeIn();
       $("#left-img").fadeOut();
-
       $("#result-list").empty();
-      resultList.reverse();
 
+      resultList.reverse();
       for (var i = 0; i < resultList.length; i++) {
         $("#result-list").append("<li>" + resultList[i] + "</li>");
       }
-
     });
 
     if (isNaN(numberInput)) {
