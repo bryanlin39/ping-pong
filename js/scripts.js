@@ -32,5 +32,11 @@ $(document).ready(function() {
       }
 
     });
+
+    if (isNaN(numberInput)) {
+      $("#reverse-button").hide()
+      alert("You can only play ping-pong with numbers!");
+    }
+
   });
 });

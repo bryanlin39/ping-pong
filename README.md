@@ -27,6 +27,9 @@ Number Ping-Pong is an interactive webpage that uses JavaScript and jQuery to ta
 * Reverse results
   * _Example Input:_ 3 => reverse
   * _Example Output:_ [1,2,ping] => [ping,2,1]
+* Show error alert when user input is not a number
+  * _Example Input:_ cat
+  * _Example Output:_ "You can only play ping-pong with numbers!"
 
 ## Setup/Installation Requirements
 
