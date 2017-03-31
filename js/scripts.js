@@ -2,6 +2,10 @@ $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
 
+    $("#left-img").fadeIn();
+    $("#right-img").fadeOut();
+    $("#result-field").slideDown();
+
     $("#result-list").empty();
     var numberInput = parseInt($("#number-input").val());
     var resultList = [];
@@ -24,6 +28,10 @@ $(document).ready(function() {
     // Reverse Button Functionality
     $("#reverse-button").show()
     $("#reverse-button").click(function() {
+
+      $("#right-img").fadeIn();
+      $("#left-img").fadeOut();
+
       $("#result-list").empty();
       resultList.reverse();
 

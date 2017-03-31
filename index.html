@@ -9,22 +9,52 @@
   </head>
 
   <body>
-    <h1>Numbers Ping-Pong</h1>
+    <div class="container-fluid">
 
-    <form id="number">
-      <div class="form-group">
-        <label for="number">Please enter a number:</label>
-        <input type="text" class="form-control" id="number-input" required>
+      <div class="row" id="heading">
+        <h1>Numbers Ping-Pong</h1>
       </div>
-      <button type="submit" class="btn btn-success btn-lg" name="submit" id="start-button">Play!</button>
-      <button type="button" class="btn btn-danger btn" name="reverse" id="reverse-button">Reverse!</button>
-    </form>
 
-    <div id="result-field">
-      <ul id="result-list"></ul>
+      <div class="row" id="main">
+        <div class="col-md-6" id="left">
+          <form id="number">
+            <div class="form-group">
+              <label for="number">Please enter a number:</label>
+              <input type="text" class="form-control" id="number-input" required>
+            </div>
+            <button type="submit" class="btn btn-lg" name="submit" id="start-button">Play!</button>
+            <button type="button" class="btn btn-lg" name="reverse" id="reverse-button">Reverse!</button>
+          </form>
+
+          <img src="img/left.jpg" id="left-img">
+          <img src="img/right.jpg" id="right-img">
+        </div>
+
+        <div class="col-md-6" id="right">
+          <div class="well" id="result-field">
+            <ul id="result-list"></ul>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- <div class="container" id"content">
+          <form id="number">
+            <div class="form-group">
+              <label for="number">Please enter a number:</label>
+              <input type="text" class="form-control" id="number-input" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg" name="submit" id="start-button">Play!</button>
+            <button type="button" class="btn btn-danger btn" name="reverse" id="reverse-button">Reverse!</button>
+          </form>
+
+          <div id="result-field">
+            <ul id="result-list"></ul>
+          </div>
+        </div> -->
+
+      </div>
+
     </div>
-
-
-
   </body>
 </html>

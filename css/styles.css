@@ -1,3 +1,89 @@
 #reverse-button {
   display: none;
 }
+
+body {
+  color: white;
+}
+
+#heading {
+  height: 200px;
+  background-image: url(http://web.mit.edu/tabletennis/IMAGES/cv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 6px solid white;
+}
+
+#heading h1 {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 200px;
+  color: white;
+  text-shadow: black 2px 2px 4px;
+}
+
+#left {
+  background-color: #5473ff;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  border-right: 3px solid white;
+}
+
+#right {
+  background-color: #fc2d2d;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  border-left: 3px solid white;
+}
+
+#number {
+  margin: 30px;
+}
+
+label {
+  font-size: 18px;
+}
+
+#start-button {
+  color: #ffc300;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: grey 1px 1px 3px;
+}
+
+#reverse-button {
+  color: white;
+  font-weight: bold;
+  background-color: #ffc300;
+}
+
+#left img {
+  height: 180px;
+  width: auto;
+  display: none;
+}
+
+#left-img {
+  float: left;
+}
+
+#right-img {
+  float: right;
+}
+
+#result-field {
+  margin: 50px 30px 30px 30px;
+  height: 80%;
+  color: black;
+  background-color: white;
+  display: none;
+}
+
+#result-list {
+  height: 100%;
+  column-count: 4;
+  column-fill: auto;
+}
