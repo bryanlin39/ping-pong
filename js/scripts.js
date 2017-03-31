@@ -2,10 +2,10 @@ $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
 
+    $("#result-list").empty();
     var numberInput = parseInt($("#number-input").val());
 
     for (var i = 1; i <= numberInput; i++) {
-      debugger;
       var result = i
 
       if (result % 15 === 0) {
@@ -17,7 +17,6 @@ $(document).ready(function() {
       }
 
       $("#result-list").append("<li>" + result + "</li>");
-
     }
   });
 });
