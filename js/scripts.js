@@ -10,6 +10,8 @@ $(document).ready(function() {
 
       if (result % 3 === 0) {
         result = "ping";
+      } else if (result % 5 === 0) {
+        result = "pong";
       }
 
       $("#result-list").append("<li>" + result + "</li>");
